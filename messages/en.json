@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "brand": "Vocably",
+    "tagline": "English vocabulary that sticks"
+  },
+  "home": {
+    "title": "Learn English, one word at a time",
+    "subtitle": "Short cards, spaced repetition that adapts to you, and a streak worth keeping.",
+    "startCta": "Start reviewing",
+    "wordsDue": "{count, plural, =0 {No words due} one {1 word due} other {# words due}}",
+    "wordsDueToday": "today",
+    "allCaughtUp": "You're all caught up. Come back tomorrow to keep your streak.",
+    "stats": {
+      "streak": "Streak",
+      "streakUnit": "{count, plural, =0 {day} one {day} other {days}}",
+      "mastered": "Words mastered",
+      "totalWords": "Total words",
+      "reviewsToday": "Reviews today"
+    },
+    "boxes": {
+      "title": "Box distribution",
+      "box": "Box {n}"
+    },
+    "resetProgress": "Reset my progress",
+    "resetConfirm": "Erase all your progress? This cannot be undone."
+  },
+  "review": {
+    "title": "Review",
+    "back": "Back",
+    "flip": "Flip card",
+    "flipHint": "Press Space or click the card",
+    "know": "I knew it",
+    "dontKnow": "Review again",
+    "knowHint": "→ or right click",
+    "dontKnowHint": "← or left click",
+    "progress": "{current} / {total}",
+    "example": "Example",
+    "sessionDone": {
+      "title": "Session complete",
+      "score": "{correct} correct out of {total}",
+      "xpEarned": "+{xp} XP",
+      "streakKept": "Streak kept: {count} days",
+      "streakStarted": "New streak started",
+      "backHome": "Back home",
+      "reviewMore": "Review more"
+    },
+    "empty": {
+      "title": "Nothing to review right now",
+      "subtitle": "All your words are up to date. Come back later.",
+      "backHome": "Back home"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} Riadh MNASRI"
+  }
+}

@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vocably
 
-## Getting Started
+Une application web pour réviser et apprendre du vocabulaire anglais avec une répétition espacée façon Leitner (5 boîtes), pensée pour être ergonomique et addictive : cartes courtes, série (streak) à ne pas casser, XP à chaque révision.
 
-First, run the development server:
+[README in English](README.en.md)
+
+## Fonctionnement
+
+- Chaque mot vit dans une des 5 boîtes du système Leitner. Une bonne réponse fait monter le mot d'une boîte (intervalle de révision plus long) ; une mauvaise réponse le renvoie en boîte 1.
+- Les mots dus aujourd'hui sont ceux dont la date de révision est passée.
+- La progression (boîtes, série, XP, historique de révisions) est stockée en local dans le navigateur (`localStorage`), aucune donnée n'est envoyée à un serveur.
+
+## Stack
+
+- [Next.js](https://nextjs.org) (App Router, Turbopack) + TypeScript
+- [Tailwind CSS](https://tailwindcss.com)
+- [next-intl](https://next-intl.dev) pour l'interface bilingue français / anglais
+- Déploiement sur [Vercel](https://vercel.com)
+
+## Développement local
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+L'application est servie sur [http://localhost:7162](http://localhost:7162).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` : serveur de développement (port 7162)
+- `npm run build` : build de production
+- `npm run start` : sert le build de production
+- `npm run lint` : vérifie le code avec ESLint
 
-## Learn More
+## Déploiement
 
-To learn more about Next.js, take a look at the following resources:
+Le projet est déployé sur Vercel, avec déploiement automatique à chaque push sur `main`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Licence
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2026 Riadh MNASRI

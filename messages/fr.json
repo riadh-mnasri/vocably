@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "brand": "Vocably",
+    "tagline": "Le vocabulaire anglais qui reste"
+  },
+  "home": {
+    "title": "Apprends l'anglais, un mot à la fois",
+    "subtitle": "Des cartes courtes, une répétition espacée qui s'adapte à toi, et une série à ne pas casser.",
+    "startCta": "Commencer la révision",
+    "wordsDue": "{count, plural, =0 {Aucun mot à réviser} one {1 mot à réviser} other {# mots à réviser}}",
+    "wordsDueToday": "aujourd'hui",
+    "allCaughtUp": "Tout est à jour. Reviens demain pour continuer ta série.",
+    "stats": {
+      "streak": "Série",
+      "streakUnit": "{count, plural, =0 {jour} one {jour} other {jours}}",
+      "mastered": "Mots maîtrisés",
+      "totalWords": "Mots au total",
+      "reviewsToday": "Révisions aujourd'hui"
+    },
+    "boxes": {
+      "title": "Répartition par boîte",
+      "box": "Boîte {n}"
+    },
+    "resetProgress": "Réinitialiser ma progression",
+    "resetConfirm": "Effacer toute ta progression ? Cette action est irréversible."
+  },
+  "review": {
+    "title": "Révision",
+    "back": "Retour",
+    "flip": "Retourner la carte",
+    "flipHint": "Appuie sur Espace ou clique la carte",
+    "know": "Je savais",
+    "dontKnow": "À revoir",
+    "knowHint": "→ ou clic droit",
+    "dontKnowHint": "← ou clic gauche",
+    "progress": "{current} / {total}",
+    "example": "Exemple",
+    "sessionDone": {
+      "title": "Session terminée",
+      "score": "{correct} bonnes réponses sur {total}",
+      "xpEarned": "+{xp} XP",
+      "streakKept": "Série maintenue : {count} jours",
+      "streakStarted": "Nouvelle série commencée",
+      "backHome": "Retour à l'accueil",
+      "reviewMore": "Réviser encore"
+    },
+    "empty": {
+      "title": "Rien à réviser pour l'instant",
+      "subtitle": "Tous tes mots sont à jour. Reviens plus tard.",
+      "backHome": "Retour à l'accueil"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} Riadh MNASRI"
+  }
+}
