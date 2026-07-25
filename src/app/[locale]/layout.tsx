@@ -49,14 +49,17 @@ export default async function LocaleLayout({
     >
       <body className="min-h-full flex flex-col bg-[--color-canvas] text-[--color-ink]">
         <NextIntlClientProvider>
-          <header className="sticky top-0 z-10 flex items-center justify-between border-b border-[--color-border]/60 bg-[--color-canvas]/80 px-6 py-4 backdrop-blur-md sm:px-10">
-            <span className="flex items-center gap-2.5">
-              <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-[--color-accent] text-sm font-bold text-[--color-accent-ink] shadow-sm">
-                V
+          <header className="sticky top-0 z-10 border-b border-[--color-border]/60 bg-[--color-canvas]/80 backdrop-blur-md">
+            <div className="h-1 bg-hero-gradient" />
+            <div className="flex items-center justify-between px-6 py-4 sm:px-10">
+              <span className="flex items-center gap-2.5">
+                <span className="bg-hero-gradient flex h-9 w-9 items-center justify-center rounded-xl text-sm font-bold text-white shadow-md shadow-[--color-accent]/30">
+                  V
+                </span>
+                <span className="text-lg font-bold tracking-tight">Vocably</span>
               </span>
-              <span className="text-lg font-bold tracking-tight">Vocably</span>
-            </span>
-            <LocaleSwitcher locale={locale} />
+              <LocaleSwitcher locale={locale} />
+            </div>
           </header>
           <main className="flex-1 flex flex-col">{children}</main>
           <footer className="px-6 py-6 text-center text-sm text-[--color-muted] sm:px-10">
