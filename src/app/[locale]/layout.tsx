@@ -63,7 +63,14 @@ export default async function LocaleLayout({
           </header>
           <main className="flex-1 flex flex-col">{children}</main>
           <footer className="px-6 py-6 text-center text-sm text-[--color-muted] sm:px-10">
-            {t("copyright", { year: new Date().getFullYear() })}
+            {t.rich("copyright", {
+              year: new Date().getFullYear(),
+              a: (chunks) => (
+                <a href="https://riadh-mnasri.pro" className="hover:underline">
+                  {chunks}
+                </a>
+              ),
+            })}
           </footer>
         </NextIntlClientProvider>
       </body>
